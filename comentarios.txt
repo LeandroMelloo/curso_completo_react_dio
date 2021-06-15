@@ -1,0 +1,35 @@
+método = define o comportamento ou maneira de fazer algo.
+método = pode receber quaquer quantidade de parâmetros.
+função/método = são termos sinônimos e que nós ajudam a criar um vocabulário mais rico dentro do nosso sistema, utilizamos métodos para dar nomes aos comportamentos que nossa classe possui e isso facilita a comunicação dentro da equipe.
+
+# => faz com que o codigo fique privado, sendo assim só a classe ContaCorrente pode acessar.
+Exemplo:
+#saldo = 0;
+if (this.#saldo >= valor) {
+    this.#saldo -= valor;
+}
+Exemplo:
+if (valor > 0) {
+    this.#saldo += valor;
+    console.log(this.#saldo)
+}
+
+- "early return" (ou "retorno antecipado", em tradução livre). Essa técnica consiste em verificarmos todas as situações indesejadas primeiro. Por exemplo, no método depositar() não queremos que o valor recebido seja menor ou igual a zero. Caso isso aconteça, simplesmente usaremos a instrução return para pararmos a execução do código.
+
+Exemplo:
+if (valor <= 0) {
+    return;
+}
+this.saldo += valor;
+
+- No JavaScript, se um método não possui a palavra-chave return - ou seja, se ele não devolve um valor explicitamente -, ele sempre devolve um undefined. Outra característica interessante é que toda vez que um método encontra a palavra-chave return, a sua execução é encerrada. Sendo assim, se passarmos a instrução return valor para antes da nossa condicional e executarmos nosso código, o 50 será exibido no console, mas o saque não será efetuado com sucesso.
+
+- toda vez que crio um arquivo JavaScript com a letra maiuscula, estou referenciando uma Classe.
+ex: Cliente.js
+
+Para que serve a criação de módulos no JavaScript?
+Criamos módulos para compartilhar código entre os diferentes arquivos do meu sistem, ajudando na organização dele.
+Dentro do JS cada arquivo é considerado um módulo e podemos escolher o que queremos exportar ou não a partir dele.
+
+null = é explicito um valor definido
+undefined = é o valor indefinido
