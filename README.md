@@ -1,2 +1,2 @@
-# formacao_react_alura
-Formação Recat Alura
+# Curso React na DIO
+Curso React na DIO
